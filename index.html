@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Tracker</title>
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="contenthome.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" href="Aquatracker.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Encabezado con logo e imagen de fondo -->
+    <header>
+    <a href="inicio.html">
+  <img src="Aquatracker.png" alt="Logo Aqua Tracker" class="logo">
+    </a>
+
+    
+    <div class="time-container">
+        <div class="time-item">
+            <a href="https://www.timeanddate.com/worldclock/spain/madrid" id="hora-espanola" target="_blank">
+                <!-- Enlace con la hora de España y la bandera -->
+                <span id="hora-espanola-text"></span> 
+                <img src="Flag_of_Spain.png" alt="Bandera de España"> 
+            </a>
+        </div>
+        <div class="time-item">
+            <a href="https://www.timeanddate.com/worldclock/spain/santa-cruz" id="hora-canaria" target="_blank">
+                <!-- Enlace con la hora de Canarias y la bandera -->
+                <span id="hora-canaria-text"></span>
+                <img src="canarias.png" alt="Bandera de Canarias"> 
+            </a>
+        </div>
+    </div>
+    </header>
+
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="nav-links">
+            <a href="inicio.html" class="activa">Inicio</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="especies.html">Especies</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="donaciones.html">Donaciones</a>
+
+            <div class="desplegable">
+                <a href="#" class="menu-principal">Más Opciones<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icono-desplegable" width="18" height="18" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                  </a>
+                <ul class="submenu">
+                    <li><a href="actualizaciones.html">Notas de Actualización</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search-form">
+            <input type="text" class="search-input" placeholder="Buscar...">
+            <button class="search-button">🔍</button>
+        </div>
+    </nav>
+
+
+    <!--Pasaimágenes-->
+    <div class="titulo-pagina">
+        <h1>¡BIENVENIDOS A AQUA TRACKER!</h1>
+        <hr>
+    </div>
+
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide">
+            <a href="inicio.html">
+                <img src="slider1.jpg">
+            </a>
+            <div class="zoom-icon" onclick="zoomImage('slider1.jpg')">🔍</div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <a href="inicio.html">
+                <img src="img2.png">
+            </a>
+            <div class="zoom-icon" onclick="zoomImage('img2.png')">🔍</div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <a href="inicio.html">
+                <img src="img3.png">
+            </a>
+            <div class="zoom-icon" onclick="zoomImage('img3.png')">🔍</div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="slide">
+            <a href="inicio.html">
+                <img src="img4.png">
+            </a>
+            <div class="zoom-icon" onclick="zoomImage('img4.png')">🔍</div>
+        </div>
+
+        <!--Botones de navegación -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    
+    <!-- Sobre Nosotros -->
+    <div class="about-us">
+        <div class="title-about">
+            <h1>NUESTRA MISIÓN</h1>
+            <hr>
+        </div>
+        <div class="content-about">
+            <p>Aqua Tracker es una organización enfocada en la protección de los ecosistemas y especies marinas de Tenerife.</p>
+            <p>Utilizamos tecnologías avanzadas y un enfoque sostenible para preservar la biodiversidad marina.</p>  
+            <p>Nuestro compromiso nos lleva a expandir nuestras acciones globalmente, colaborando en la conservación de los océanos para garantizar un futuro más saludable para nuestros mares.</p>
+        </div>
+    </div>
+
+    <!--Noticias-->
+    <div class="titulo-pagina">
+        <h1>ÚLTIMAS NOTICIAS</h1>
+        <hr>
+    </div>
+
+    <div class="news-all">
+        <div class="news-slider">
+            <button class="nav-btn prev-btn">&lt;</button>
+            <div class="news-container">
+            <!-- Noticia 1 -->
+                <div class="news-item">
+                    <div class="news-content">
+                    <p class="news-date">01 Dic 2024</p>
+                    <h3 class="news-title">¡AquaTracker lanza una nueva campaña!</h3>
+                    <p class="news-text">Nuestro equipo se enorgullece de anunciar una nueva iniciativa para proteger a las especies marinas en peligro.</p>
+                    </div>
+                <img src="https://via.placeholder.com/600x300" alt="Imagen Noticia 1">
+                </div>
+            <!-- Noticia 2 -->
+                <div class="news-item">
+                    <div class="news-content">
+                    <p class="news-date">30 Nov 2024</p>
+                    <h3 class="news-title">Encuentran tortuga herida en Tenerife</h3>
+                    <p class="news-text">Gracias a la colaboración ciudadana, hemos rescatado una tortuga herida que será atendida por expertos.</p>
+                    </div>
+                <img src="https://via.placeholder.com/600x300" alt="Imagen Noticia 2">
+                </div>
+            <!-- Noticia 3 -->
+                <div class="news-item">
+                    <div class="news-content">
+                    <p class="news-date">29 Nov 2024</p>
+                    <h3 class="news-title">¡Gran donación para la protección de delfines!</h3>
+                    <p class="news-text">AquaTracker recibe apoyo de una fundación internacional para expandir su labor en la región.</p>
+                    </div>
+                <img src="https://via.placeholder.com/600x300" alt="Imagen Noticia 2">
+                    </div>
+            </div>
+            <button class="nav-btn next-btn">&gt;</button>
+        </div>
+    </div>
+
+        <!--Únete a nosotros (Email)-->
+        <div class="inicio-email-content">
+            <div class="inicio-email-content-texto">
+                <h2>Navega con nosotros</h2>
+                <p>Nosotros ya hemos cubierto la mayor parte de la isla de Tenerife. <br>Con tu ayuda, podremos expandirnos a otras ubicaciones, nacionales como internacionales.</p>
+            </div>
+            <div class="inicio-email-box-content">
+                <input type="email" class="inicio-correo-input" id="email" placeholder="Introduce tu correo.">
+                <button onclick="confirmarCorreo()" class="inicio-correo-boton">Unirse</button>
+            </div>
+        </div>
+    
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footerizq">
+            <div class="footerizq-contacto">
+                <h2>Contacto</h2>
+                <p>Aqua Tracker International Headquarters
+                    <br>Calle de San Juan de la Cruz
+                    <br>Tenerife, Islas Canarias 38009 España</p>
+            </div>
+            <div class="footerizq-telefono">
+                <h2>Teléfono Incidencias</h2>
+                <p>+34 922 123 456</p>
+            </div>
+        </div>
+        
+        <div class="footercenter">
+            <div class="footercenter-rs">
+                <h2>Redes Sociales</h2>
+                <a href="instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                <a href="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+                <a href="github"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                <a href="youtube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+            </div>
+            
+            <div class="email-content">
+                <h2>Navega con nosotros</h2>
+                <div class="email-box-content">
+                    <input type="email" class="correo-input" id="email" placeholder="Introduce tu correo.">
+                    <button onclick="confirmarCorreo()" class="correo-boton">Unirse</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerdonaciones">
+            <div class="donaciones">
+                <h2>AYÚDANOS A CUMPLIR <br>NUESTRO OBJETIVO</h2>
+                <p>Nosotros ya hemos cubierto la mayor parte de la isla de Tenerife. <br>
+                Con tu ayuda, podremos expandirnos a otras ubicaciones, nacionales como internacionales.</p>
+                <div class="donaciones-content">
+                <form class="donaciones-form" onsubmit="procesarDonacion(event)">
+                    <input type="number" class ='donaciones-input' id="cantidad" placeholder="Cantidad en EUR" min="1" step="0.01" required>
+                    <button type="submit" class="donaciones-boton">Donar</button> 
+                </form>
+                </div>
+            </div>
+        </div>
+            
+        <div class="footerder">
+            <div class="copyright">
+                <h2>Hecho por:</h2>
+                <p>
+                    <li>Jorge Ruiz</li>
+                    <li>Iman Stitou</li>
+                    <li>Marcos Pérez</li>
+                    <li>Álvaro Pérez</li>
+                </p>
+            </div>
+            <div class="version">
+                <h3>Versión 1.2</h3>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript para obtener la hora actual y mostrarla en el documento-->
+
+        <script>
+            // Función para actualizar la hora española y canaria
+            function updateClock() {
+                const now = new Date();
+
+                // Obtener la hora española
+                const horaEspanola = now.toLocaleTimeString('es-ES', { timeZone: 'Europe/Madrid' });
+                document.getElementById('hora-espanola-text').textContent = horaEspanola; // Actualizar texto
+
+                // Obtener la hora canaria
+                const horaCanaria = now.toLocaleTimeString('es-ES', { timeZone: 'Atlantic/Canary' });
+                document.getElementById('hora-canaria-text').textContent = horaCanaria; // Actualizar texto
+            }
+
+            // Actualiza cada segundo
+            setInterval(updateClock, 1000);
+            // Inicializar el reloj al cargar la página
+            updateClock();
+        </script>
+
+    <!--JS para el pasaimágenes-->
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll(".slide");
+            let slideInterval = setInterval(nextSlide, 3000); // Cambia automáticamente cada 3 segundos
+
+            // Mostrar el slide actual
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.display = i === index ? "block" : "none";
+                });
+            }
+
+            // Cambiar slide manualmente
+            function changeSlide(direction) {
+                currentSlide += direction;
+                if (currentSlide < 0) {
+                    currentSlide = slides.length - 1;
+                } else if (currentSlide >= slides.length) {
+                    currentSlide = 0;
+                }
+                showSlide(currentSlide);
+
+                // Reiniciar el pase automático
+                resetSlideInterval();
+            }
+
+            // Pasar al siguiente slide automáticamente
+            function nextSlide() {
+                changeSlide(1);
+            }
+
+            // Reiniciar el pase automático
+            function resetSlideInterval() {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 3000);
+            }
+
+            // Función del botón de lupa
+            function zoomImage(imageUrl) {
+                window.open(imageUrl, '_blank');
+            }
+
+            // Mostrar el primer slide
+            showSlide(currentSlide);
+        </script>
+
+    <!--JS para el botón de unirse del correo-->
+    <script>
+        function confirmarCorreo() {
+            const email = document.getElementById("email").value;
+            if (email) {
+                alert('Correo confirmado. Bienvenido a Aqua Tracker!')
+            } else {
+                alert('Introduce un correo válido para estar notificado.')
+            }
+        }
+    </script>
+
+    <!--JS para las donaciones-->
+    <script>
+        function procesarDonacion(event) {
+            event.preventDefault();
+            const cantidad = document.getElementById("cantidad").value;
+            if (cantidad > 0) {
+                alert('Bienvenido al equipo!! Gracias por apoyar la causa!');
+            } else {
+                alert("Por favor, introduce una cantidad válida.");
+            }
+        }
+    </script>
+
+    <!--JS para las noticias-->
+    <script>
+        // Asegúrate de que el script se ejecute solo cuando exista el contenedor .news-all
+        document.addEventListener('DOMContentLoaded', () => {
+        const newsAll = document.querySelector('.news-all'); // Selecciona el contenedor principal
+
+            // Verifica si existe para evitar errores
+            if (!newsAll) return;
+
+            const newsSlider = newsAll.querySelector('.news-slider');
+            const newsContainer = newsSlider.querySelector('.news-container');
+            const nextBtn = newsSlider.querySelector('.next-btn');
+            const prevBtn = newsSlider.querySelector('.prev-btn');
+            const newsItems = newsContainer.querySelectorAll('.news-item');
+            const totalNews = newsItems.length;
+
+            let currentIndex = 0; // Índice de la noticia actual
+            let autoSlideInterval; // Intervalo para el cambio automático
+            let inactivityTimeout; // Tiempo de inactividad antes de reiniciar el intervalo
+
+            // Actualizar la posición del contenedor para mostrar la noticia actual
+            const updateSliderPosition = () => {
+                const offset = -currentIndex * 100; // Calcula el desplazamiento en porcentaje
+                newsContainer.style.transform = `translateX(${offset}%)`;
+            };
+
+            // Cambiar a la siguiente noticia
+            const nextSlide = () => {
+                currentIndex = (currentIndex + 1) % totalNews; // Incrementa el índice, vuelve a 0 al llegar al final
+                updateSliderPosition();
+            };
+
+            // Cambiar a la noticia anterior
+            const prevSlide = () => {
+                currentIndex = (currentIndex - 1 + totalNews) % totalNews; // Decrementa el índice, vuelve al último si está en 0
+                updateSliderPosition();
+            };
+
+            // Iniciar el cambio automático de noticias
+            const startAutoSlide = () => {
+                autoSlideInterval = setInterval(nextSlide, 5000); // Cambia cada 5 segundos
+            };
+
+            // Detener el cambio automático de noticias
+            const stopAutoSlide = () => {
+                clearInterval(autoSlideInterval);
+                clearTimeout(inactivityTimeout);
+            };
+
+            // Reiniciar el cambio automático después de una interacción
+            const resetInactivityTimer = () => {
+                stopAutoSlide(); // Detén el carrusel
+                inactivityTimeout = setTimeout(startAutoSlide, 5000); // Reinicia después de 5 segundos
+            };
+
+            // Eventos de clic para los botones
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetInactivityTimer(); // Reinicia el temporizador
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetInactivityTimer(); // Reinicia el temporizador
+            });
+
+            // Inicia el cambio automático al cargar la página
+            startAutoSlide();
+            });
+    </script>
+    
+</body>
+</html>
